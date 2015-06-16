@@ -1,6 +1,6 @@
 {
   "name": "babelsbergjs-cassowary",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Cassowary solver for BabelsbergJS",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Parnswir/babelsbergjs-core.git"
+    "url": "https://github.com/babelsbergjs/babelsbergjs-cassowary.git"
   },
   "keywords": [
     "constraints",
@@ -16,11 +16,10 @@
   ],
   "author": "The Babelsberg Team",
   "bugs": {
-    "url": "https://github.com/Parnswir/babelsbergjs-core/issues"
+    "url": "https://github.com/babelsbergjs/babelsbergjs-cassowary/issues"
   },
-  "homepage": "https://github.com/Parnswir/babelsbergjs-core",
+  "homepage": "https://github.com/babelsbergjs/babelsbergjs-cassowary",
   "dependencies": {
-    "lively.lang": "~0.4.1",
-    "babelsberjs-core": "~1.0.0"
+    "babelsbergjs-core": "0.0.0"
   }
 }
