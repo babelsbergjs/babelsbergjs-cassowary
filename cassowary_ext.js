@@ -1,5 +1,4 @@
-module('users.timfelgentreff.babelsberg.cassowary_ext').
-requires('users.timfelgentreff.cassowary.DwarfCassowary').toRun(function() {
+require("./DwarfCassowary.js");
 
 ClSimplexSolver.addMethods({
     isConstraintObject: true,
@@ -270,5 +269,3 @@ ClConstraint.addMethods({
         this._solver = value;
     }
 });
-
-}); // end of module

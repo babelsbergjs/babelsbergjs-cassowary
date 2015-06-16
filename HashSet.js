@@ -1,5 +1,5 @@
-module('users.timfelgentreff.cassowary.HashSet').
-    requires('users.timfelgentreff.cassowary.Hashtable').toRun(function() {
+require('./Hashtable.js');
+
 /**
  * Copyright 2010 Tim Down.
  *
@@ -127,4 +127,3 @@ Object.subclass('HashSet', 'default category', {
         return this.hashTable.escapingEach(callback);
     }
 });
-}); // end of module
