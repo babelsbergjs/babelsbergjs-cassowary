@@ -2,9 +2,9 @@
   "name": "babelsbergjs-cassowary",
   "version": "0.0.0",
   "description": "Cassowary solver for BabelsbergJS",
-  "main": "index.js",
+  "main": "cassowary_ext.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",

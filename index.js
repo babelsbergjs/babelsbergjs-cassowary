@@ -1,2 +1,11 @@
 require("babelsbergjs-core");
-require("./cassowary_ext.js");
+var bbb_cassowary = require("./cassowary_ext");
+
+obj = {a: 1, b: 2};
+s = new bbb_cassowary.ClSimplexSolver();
+bbb.always({solver: s, ctx: {obj: obj}}, function () {
+  return obj.a + 7 <= obj.b;
+});
+obj.a = 10;
+if(!(obj.a + 7 <= obj.b))
+  throw("AssertionError: Expecting obj.b (" + obj.b + ") to be at least 7 + obj.a (" + obj.a + ")")

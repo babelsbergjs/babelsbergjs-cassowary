@@ -1,5 +1,15 @@
 require("./DwarfCassowary.js");
 
+
+module.exports = {
+  ClSimplexSolver: ClSimplexSolver,
+  ClSimplexSolver: ClSimplexSolver,
+  ClAbstractVariable: ClAbstractVariable,
+  ClLinearExpression: ClLinearExpression,
+  ClConstraint: ClConstraint
+}
+
+
 ClSimplexSolver.addMethods({
     isConstraintObject: true,
     constraintVariableFor: function(value, ivarname) {
