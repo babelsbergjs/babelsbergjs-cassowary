@@ -1,6 +1,6 @@
 {
   "name": "babelsbergjs-cassowary",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Cassowary solver for BabelsbergJS",
   "main": "cassowary_ext.js",
   "scripts": {
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/babelsbergjs/babelsbergjs-cassowary",
   "dependencies": {
-    "babelsbergjs-core": "0.0.0"
+    "babelsbergjs-core": "^0.1.0"
   }
 }
