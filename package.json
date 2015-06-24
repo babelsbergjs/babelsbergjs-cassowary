@@ -4,7 +4,8 @@
   "description": "Cassowary solver for BabelsbergJS",
   "main": "cassowary_ext.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "mocha",
+    "start": "echo 'Start node-inspector in a separate terminal!' && mocha -d --debug-brk"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/babelsbergjs/babelsbergjs-cassowary",
   "dependencies": {
     "babelsbergjs-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "should": "^7.0.1"
   }
 }
