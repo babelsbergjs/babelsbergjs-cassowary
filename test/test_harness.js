@@ -51,6 +51,26 @@ Object.subclass("lively.morphic.Text", {
     }
 });
 
+Object.subclass("lively.morphic.Morph", {
+        initialize: function(x, y) {
+                this.position = pt(x, y);
+        },
+        setPosition: function(pos) {
+                return this.position = pos;
+        },
+        getPosition: function() {
+                return this.position;
+        }
+});
+Object.extend(lively.morphic.Morph, {
+        makeRectangle: function(x, y) {
+                return new lively.morphic.Morph(x, y);
+        },
+        makeCircle: function(point) {
+                return new lively.morphic.Morph(point.x, point.y);
+        }
+});
+
 /*
 window.GlobalErrors = [];
 window.runcount = 0;
@@ -142,26 +162,6 @@ Object.subclass("Color", {
 Object.extend(Color, {
         rgb: function(r, g, b) {
             return new Color(r/255, g/255, b/255);
-        }
-});
-
-Object.subclass("lively.morphic.Morph", {
-        initialize: function(x, y) {
-                this.position = pt(x, y);
-        },
-        setPosition: function(pos) {
-                return this.position = pos;
-        },
-        getPosition: function() {
-                return this.position;
-        }
-});
-Object.extend(lively.morphic.Morph, {
-        makeRectangle: function(x, y) {
-                return new lively.morphic.Morph(x, y);
-        },
-        makeCircle: function(point) {
-                return new lively.morphic.Morph(point.x, point.y);
         }
 });
 
